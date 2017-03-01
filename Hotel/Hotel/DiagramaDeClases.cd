@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Hotel.clsRuc">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAACAAAAAAAgAAAAAAAAgAAAKAAAAAAAAEAAQAAAQA=</HashCode>
+      <FileName>clsRuc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.clsHuesped">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAEoIIIAAQAAgAAACACEAAAAACEAAAxAAAAQAAAAAAA=</HashCode>
+      <FileName>clsHuesped.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IdRucH" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hotel.clsEmpleado">
+    <Position X="6.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsEmpleado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.clsTipoHabitacion">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsTipoHabitacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.clsHabitacion">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsHabitacion.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="clsTipoHabitacion" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hotel.clsAlquiler">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>clsAlquiler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="clsEmpleado" />
+      <Property Name="clsHabitacion" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hotel.clsReserva">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsReserva.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="clsHuesped" />
+      <Property Name="clsHabitacion" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hotel.clsDetalleAlquiler">
+    <Position X="2.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsDetalleAlquiler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="clsAlquiler" />
+      <Property Name="clsHuesped" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
